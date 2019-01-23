@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Vue Basics</title>
+      <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+      <script src="../../engine/vueDev.js"></script>
+
+     <link rel="stylesheet" type="text/css" href="style.css">
+
+
+  </head>
+  <body>
+      <h1> Vue Basics </h1>
+    <div id="app">
+      <!-- v-bind:something is the same as :something -->
+      <h2>{{ title }}</h2>
+      <p> I earn {{ wage }} per hour.</p>
+      <button v-on:click="changeWage(1)">Increase wage by $1</button>
+      <button v-on:click="changeWage(-1)">Decrease wage by $1</button>
+      <button v-on:dblclick="changeWage(5)">Increase wage by $5</button>
+      <button v-on:dblclick="changeWage(-5)">Decrease wage by $5</button>
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

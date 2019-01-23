@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Vue Basics</title>
+      <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+      <script src="../../engine/vueDev.js"></script>
+
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <style>
+      .one {
+        color: green;
+      }
+      .two {
+        text-decoration: line-through;
+      }
+     </style>
+
+  </head>
+  <body>
+      <h1> Vue Basics </h1>
+    <div id="app">
+      <!-- v-bind:something is the same as :something -->
+      <h2>{{ title }}</h2>
+      <p>{{ greet('morning') }}</p>
+      <a v-bind:href="url" target="_blank">YouTube</a>
+      <div v-bind:class="classes">Classes div </div>
+      <input type="text" v-bind:value="name">
+
+
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
