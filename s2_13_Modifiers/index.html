@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Vue Basics</title>
+      <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+      <script src="../../engine/vueDev.js"></script>
+
+     <link rel="stylesheet" type="text/css" href="style.css">
+
+
+  </head>
+  <body>
+      <h1> Vue Basics </h1>
+    <div id="app">
+      <!-- v-bind:something is the same as :something also eg. v-on:keyup is the same as @keyup   -->
+      <h3>{{ title }}</h3>
+      <ul>
+      <li><button @click="logMessage">Click me! </button>
+      <button @click.alt="logMessage">alt-Click me! </button>
+      <button @click.shift="logMessage">shift-Click me! </button></li>
+      <li><a href="http://www.google.com" @click="logMessage" target="_blank">Google</a></li>
+      <li><a href="http://www.google.com" @click.prevent="logMessage">Google</a></li>
+    </ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

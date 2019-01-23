@@ -11,11 +11,11 @@
   <body>
       <h1> Vue Basics </h1>
     <div id="app">
-      <!-- v-bind:something is the same as :something -->
+      <!-- v-bind:something is the same as :something also eg. v-on:keyup is the same as @keyup   -->
       <h3>{{ title }}</h3>
       <p>My name is {{ name }} </p>
-      <input type="text" @keyup="updateName">
-      <input type="text" @keypress="updateName">
+      <input type="text" v-model="name">
+
     </div>
 
     <script src="app.js"></script>
