@@ -1,0 +1,2 @@
+to make it work put in the folder in Terminal:
+npm run dev

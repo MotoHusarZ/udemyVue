@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Vue Basics</title>
+      <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+      <script src="../../engine/vueDev.js"></script>
+
+     <link rel="stylesheet" type="text/css" href="style.css">
+
+
+  </head>
+  <body>
+      <h1> Vue Basics </h1>
+    <div id="app">
+      <!-- v-bind:something is the same as :something also eg. v-on:keyup is the same as @keyup   -->
+      <h3>{{ title }}</h3>
+      <ul>
+        <li v-for="item in items">{{ item }}</li>
+      </ul>
+
+      <div v-for="ninja in ninjas">
+        <hr>
+        <p>Name: {{ ninja.name }}</p>
+        <p>age: {{ ninja.age }}</p>
+        <p>belt color: {{ ninja.belt }}</p>
+      </div>
+      <hr><hr>
+      <h3>
+        Same as above but with index of each object:
+      </h3>
+      <div v-for="(ninja, index) in ninjas">
+        <hr>
+        <p>Name: {{ index }} {{ ninja.name }}</p>
+        <p>age: {{ ninja.age }}</p>
+        <p>belt color: {{ ninja.belt }}</p>
+      </div>
+    <script src="app.js"></script>
+  </body>
+</html>
