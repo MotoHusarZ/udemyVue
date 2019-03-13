@@ -1,24 +1,28 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <Navbar/>
-    <HelloWorld/>
-
     {{ title }}
+    <HelloWorld/>
+    <Navbar/>
+    <AllFriends/>
+    <OnlineFriends/>
 
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+/*import HelloWorld from './components/HelloWorld'*/
 // we could write inport Whatver but just to keep naming ok we use full name
 import Navbar from './Navbar'
+import AllFriends from './AllFriends'
+import OnlineFriends from './OnlineFriends'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    Navbar
+    /*HelloWorld,*/
+    Navbar,
+    OnlineFriends,
+    AllFriends
     /*if above name wouldn't be the same as import then we should use something like this
     Navbar: Whatever
       but as we use the same naming we can just use Navbar */
