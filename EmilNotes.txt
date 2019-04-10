@@ -1,2 +1,4 @@
 to make it work put in the folder in Terminal:
 npm run dev
+
+i think I didn't copy notes from my PC
